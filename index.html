@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amal C S | Frontend Developer</title>
+    <meta name="description" content="Amal C S — Frontend Developer building responsive web apps with HTML, CSS, JavaScript and React. MSc Computer Science, University of Bedfordshire.">
+    <meta property="og:title" content="Amal C S | Frontend Developer">
+    <meta property="og:description" content="Building responsive and modern web applications using HTML, CSS, JavaScript and React.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+<div id="progressBar"></div>
+<header class="header">
+    <nav class="navbar">
+        <a href="#home" class="logo">
+            <span class="logo-text">Amal <span class="logo-accent">C S</span></span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about" data-section="about">About</a></li>
+            <li><a href="#education" data-section="education">Education</a></li>
+            <li><a href="#skills" data-section="skills">Technical Skills</a></li>
+            <li><a href="#projects" data-section="projects">Projects</a></li>
+            <li><a href="#contact" data-section="contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode">
+                ☀️
+            </button>
+            <button id="hamburger" class="hamburger" aria-label="Toggle menu">
+                ☰
+            </button>
+        </div>
+    </nav>
+</header>
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="hero-left">
+        <div class="status-badge">
+            <span class="status-dot"></span> Available for opportunities
+        </div>
+        <h1>
+            I build interfaces
+            that are <span id="rotatingWord" class="rotating-word">clean</span>.
+        </h1>
+        <p class="hero-description">
+            Hi, I'm <strong class="name-highlight">Amal C S</strong> — a
+            Software Developer with a frontend
+            focus. I turn ideas into fast, accessible interfaces using
+            React, JavaScript, HTML &amp; CSS — backed by an MSc in
+            Computer Science and a habit of shipping clean code.
+        </p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn-primary">
+                View Projects
+            </a>
+            <a href="assets/Amal_C_S_CV.pdf"
+               class="btn-secondary"
+               download>
+                Download CV
+            </a>
+        </div>
+        <p class="social-label">Let's connect</p>
+        <div class="social-links">
+            <a href="https://github.com/amal196"
+               target="_blank"
+               aria-label="GitHub profile">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/amal-c-s-5181771b3/"
+               target="_blank"
+               aria-label="LinkedIn profile">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:amalcs485@gmail.com"
+               aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+    <div class="hero-right">
+        <div class="project-preview-card tilt-card" id="projectPreviewCard">
+            <div class="preview-progress" id="previewProgress">
+                <span class="segment active"><i></i></span>
+                <span class="segment"><i></i></span>
+                <span class="segment"><i></i></span>
+                <span class="segment"><i></i></span>
+            </div>
+            <p class="preview-label">FEATURED WORK</p>
+            <div class="preview-slides">
+                <div class="preview-slide active">
+                    <div class="mock-frame">
+                        <div class="mock-topbar"><span></span><span></span><span></span></div>
+                        <div class="mock-body has-image">
+                            <img src="assets/projects/clinicq.png" alt="ClinicQ preview">
+                        </div>
+                    </div>
+                    <h3><i class="fa-solid fa-hospital"></i> ClinicQ</h3>
+                    <p>Live clinic queue management dashboard</p>
+                    <div class="preview-tech"><span>React</span><span>JavaScript</span><span>HTML5</span></div>
+                </div>
+                <div class="preview-slide">
+                    <div class="mock-frame">
+                        <div class="mock-topbar"><span></span><span></span><span></span></div>
+                        <div class="mock-body has-image">
+                            <img src="assets/projects/novacart.png" alt="NovaCart preview">
+                        </div>
+                    </div>
+                    <h3><i class="fa-solid fa-cart-shopping"></i> NovaCart</h3>
+                    <p>Modern e-commerce frontend</p>
+                    <div class="preview-tech"><span>React</span><span>Vite</span></div>
+                </div>
+                <div class="preview-slide">
+                    <div class="mock-frame">
+                        <div class="mock-topbar"><span></span><span></span><span></span></div>
+                        <div class="mock-body has-image">
+                            <img src="assets/projects/spendwise.png" alt="SpendWise preview">
+                        </div>
+                    </div>
+                    <h3><i class="fa-solid fa-wallet"></i> SpendWise</h3>
+                    <p>Personal finance tracker</p>
+                    <div class="preview-tech"><span>JavaScript</span><span>HTML5</span><span>CSS3</span></div>
+                </div>
+                <div class="preview-slide">
+                    <div class="mock-frame">
+                        <div class="mock-topbar"><span></span><span></span><span></span></div>
+                        <div class="mock-body has-image">
+                            <img src="assets/projects/portfolio.png" alt="Portfolio Website preview">
+                        </div>
+                    </div>
+                    <h3><i class="fa-solid fa-laptop-code"></i> Portfolio Website</h3>
+                    <p>This custom-built site, from scratch</p>
+                    <div class="preview-tech"><span>JavaScript</span><span>HTML5</span><span>CSS3</span></div>
+                </div>
+            </div>
+            <p class="preview-cta">View all projects <i class="fa-solid fa-arrow-right"></i></p>
+        </div>
+    </div>
+</section>
+<!-- STATS -->
+<section class="stats">
+    <div class="stat reveal" data-target="#projects">
+        <div class="icon-badge stat-icon"><i class="fas fa-layer-group"></i></div>
+        <h3 data-count="4" data-suffix="">0</h3>
+        <p>Projects</p>
+    </div>
+    <div class="stat reveal" data-target="#skills">
+        <div class="icon-badge stat-icon"><i class="fas fa-microchip"></i></div>
+        <h3 data-count="10" data-suffix="+">0</h3>
+        <p>Technologies</p>
+    </div>
+    <div class="stat reveal" data-target="#education">
+        <div class="icon-badge stat-icon"><i class="fas fa-graduation-cap"></i></div>
+        <h3 class="no-count"> MSc</h3>
+        <p>Computer Science</p>
+    </div>
+</section>
+<!-- ABOUT -->
+<section id="about" class="section">
+    <p class="eyebrow reveal">GET TO KNOW ME</p>
+    <h2 class="section-title reveal">
+        About Me
+    </h2>
+    <div class="card about-card reveal">
+        <p>
+            Building modern web experiences that are fast, intuitive, and impactful. With an MSc in Computer Science and a strong foundation in React and JavaScript, I create responsive applications that combine clean design, performance, and usability. Driven by curiosity and continuous learning, I enjoy transforming complex challenges into elegant digital solutions.
+        </p>
+    </div>
+</section>
+<!-- EDUCATION -->
+<div class="alt-bg">
+<section id="education" class="section">
+    <p class="eyebrow reveal">MY JOURNEY</p>
+    <h2 class="section-title reveal">
+        Education
+    </h2>
+    <div class="education-grid">
+        <div class="card masters-card reveal">
+            <div class="icon-badge"><i class="fas fa-graduation-cap"></i></div>
+            <h3>
+                MSc Computer Science
+            </h3>
+            <p>
+                University of Bedfordshire
+            </p>
+            <p>
+                United Kingdom
+            </p>
+        </div>
+        <div class="card reveal">
+            <div class="icon-badge"><i class="fas fa-graduation-cap"></i></div>
+            <h3>
+                BSc Computer Science
+            </h3>
+            <p>
+                Mahatma Gandhi University
+            </p>
+            <p>
+                Kerala, India
+            </p>
+        </div>
+    </div>
+</section>
+</div>
+<!-- SKILLS -->
+<section id="skills" class="section">
+    <p class="eyebrow reveal">WHAT I BRING</p>
+    <h2 class="section-title reveal">
+        Technical Skills
+    </h2>
+    <div class="skills-grid">
+        <div class="card reveal">
+            <div class="icon-badge"><i class="fas fa-laptop-code"></i></div>
+            <h3>Frontend Development</h3>
+            <ul>
+                <li><i class="devicon-html5-plain colored"></i>HTML5</li>
+                <li><i class="devicon-css3-plain colored"></i>CSS3</li>
+                <li><i class="devicon-javascript-plain colored"></i>JavaScript (ES6+)</li>
+                <li><i class="devicon-react-original colored"></i>React.js</li>
+                <li><i class="fa-solid fa-link"></i>React Hooks</li>
+                <li><i class="fa-solid fa-route"></i>React Router</li>
+                <li><i class="fa-solid fa-share-nodes"></i>Context API</li>
+            </ul>
+        </div>
+        <div class="card reveal">
+            <div class="icon-badge"><i class="fas fa-toolbox"></i></div>
+            <h3>Tools &amp; Technologies</h3>
+            <ul>
+                <li><i class="devicon-git-plain colored"></i>Git</li>
+                <li><i class="devicon-github-original"></i>GitHub</li>
+                <li><i class="fa-solid fa-server"></i>REST APIs</li>
+                <li><i class="fa-solid fa-database"></i>Local Storage</li>
+                <li><i class="fa-solid fa-file-code"></i>JSON</li>
+                <li><i class="fa-solid fa-cloud-arrow-up"></i>Vercel</li>
+                <li><i class="devicon-vscode-plain colored"></i>VS Code</li>
+            </ul>
+        </div>
+        <div class="card reveal">
+            <div class="icon-badge"><i class="fas fa-layer-group"></i></div>
+            <h3>Core Frontend Concepts</h3>
+            <ul>
+                <li><i class="fa-solid fa-mobile-screen-button"></i>Responsive Web Design</li>
+                <li><i class="fa-solid fa-cubes"></i>Component-Based Development</li>
+                <li><i class="fa-solid fa-arrows-rotate"></i>State Management</li>
+                <li><i class="fa-solid fa-sitemap"></i>DOM Manipulation</li>
+            </ul>
+        </div>
+        <div class="card reveal">
+            <div class="icon-badge"><i class="fas fa-code"></i></div>
+            <h3>Programming Languages</h3>
+            <ul>
+                <li><i class="devicon-c-plain colored"></i>C</li>
+                <li><i class="devicon-cplusplus-plain colored"></i>C++</li>
+                <li><i class="devicon-javascript-plain colored"></i>JavaScript (ES6+)</li>
+                <li><i class="devicon-python-plain colored"></i>Python</li>
+            </ul>
+        </div>
+        <div class="card reveal">
+            <div class="icon-badge"><i class="fas fa-seedling"></i></div>
+            <h3>Currently Learning</h3>
+            <ul>
+                <li><i class="devicon-typescript-plain colored"></i>TypeScript</li>
+                <li><i class="fa-solid fa-bolt"></i>Next.js</li>
+                <li><i class="fa-solid fa-layer-group"></i>MERN Stack Development</li>
+            </ul>
+        </div>
+    </div>
+    <div class="marquee">
+        <div class="marquee-track">
+            <span><i class="fa-brands fa-html5"></i>HTML5</span>
+            <span><i class="fa-brands fa-css3-alt"></i>CSS3</span>
+            <span><i class="fa-brands fa-js"></i>JavaScript</span>
+            <span><i class="fa-brands fa-react"></i>React</span>
+            <span><i class="fa-solid fa-route"></i>React Router</span>
+            <span><i class="fa-solid fa-share-nodes"></i>Context API</span>
+            <span><i class="fa-brands fa-git-alt"></i>Git</span>
+            <span><i class="fa-brands fa-github"></i>GitHub</span>
+            <span><i class="fa-solid fa-server"></i>REST APIs</span>
+            <span><i class="fa-brands fa-python"></i>Python</span>
+            <span><i class="fa-solid fa-code"></i>C++</span>
+            <span><i class="fa-solid fa-cloud-arrow-up"></i>Vercel</span>
+            <span><i class="fa-solid fa-code"></i>TypeScript</span>
+            <span><i class="fa-solid fa-code"></i>Next.js</span>
+            <span><i class="fa-solid fa-layer-group"></i>MERN Stack</span>
+            <span><i class="fa-brands fa-html5"></i>HTML5</span>
+            <span><i class="fa-brands fa-css3-alt"></i>CSS3</span>
+            <span><i class="fa-brands fa-js"></i>JavaScript</span>
+            <span><i class="fa-brands fa-react"></i>React</span>
+            <span><i class="fa-solid fa-route"></i>React Router</span>
+            <span><i class="fa-solid fa-share-nodes"></i>Context API</span>
+            <span><i class="fa-brands fa-git-alt"></i>Git</span>
+            <span><i class="fa-brands fa-github"></i>GitHub</span>
+            <span><i class="fa-solid fa-server"></i>REST APIs</span>
+            <span><i class="fa-brands fa-python"></i>Python</span>
+            <span><i class="fa-solid fa-code"></i>C++</span>
+            <span><i class="fa-solid fa-cloud-arrow-up"></i>Vercel</span>
+            <span><i class="fa-solid fa-code"></i>TypeScript</span>
+            <span><i class="fa-solid fa-code"></i>Next.js</span>
+            <span><i class="fa-solid fa-layer-group"></i>MERN Stack</span>
+        </div>
+    </div>
+</section>
+<!-- FEATURED PROJECT -->
+<div class="alt-bg">
+<section class="section" id="projects">
+    <p class="eyebrow reveal">SPOTLIGHT</p>
+    <h2 class="section-title reveal">
+        Featured Project
+    </h2>
+    <div class="featured-project reveal">
+        <div class="featured-image">
+            <div class="browser-frame">
+                <div class="browser-bar">
+                    <span></span><span></span><span></span>
+                </div>
+                <div class="browser-body has-image">
+                    <img src="assets/projects/clinicq.png" alt="ClinicQ Dashboard Preview">
+                </div>
+            </div>
+        </div>
+        <div class="featured-content">
+            <h3>
+                ClinicQ
+            </h3>
+            <p>
+                A live queue management dashboard built for
+                clinics and hospitals. Patients see their exact
+                position in line and estimated wait time, and
+                get notified if the doctor is running behind —
+                so nobody has to sit around a waiting room.
+                Includes a sidebar-based dashboard with real-time
+                stat cards, a patient status donut chart, and a
+                queue health monitoring panel for staff.
+            </p>
+            <div class="tech-stack">
+                <span>React</span>
+                <span>JavaScript</span>
+                <span>HTML5</span>
+                <span>CSS3</span>
+            </div>
+            <div class="project-buttons">
+                <a href="https://clinic-q-two.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    Live Demo
+                </a>
+                <a href="https://github.com/amal196/Clinic-Q" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
+                <button class="btn-view-details" data-project="clinicq">
+                    View Details
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+<!-- OTHER PROJECTS -->
+<section class="section">
+    <p class="eyebrow reveal">MORE WORK</p>
+    <h2 class="section-title reveal">
+        Other Projects
+    </h2>
+    <div class="projects-grid">
+        <div class="project-card tilt-card reveal">
+            <div class="project-image">
+                <div class="browser-frame small">
+                    <div class="browser-bar">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="browser-body has-image">
+                        <img src="assets/projects/novacart.png" alt="NovaCart screenshot">
+                    </div>
+                </div>
+                <div class="project-overlay">
+                    <a href="https://novacart-blond.vercel.app/" target="_blank" rel="noopener noreferrer" class="overlay-btn" aria-label="Live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://github.com/amal196/Novacart" target="_blank" rel="noopener noreferrer" class="overlay-btn" aria-label="GitHub repo"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <h3>NovaCart</h3>
+            <p>
+                Modern e-commerce frontend with product
+                browsing, category filters, cart and wishlist —
+                backed by a live product API.
+            </p>
+            <div class="mini-tech">
+                <span>React</span><span>Context API</span><span>Vite</span>
+            </div>
+            <button class="btn-view-details-link" data-project="novacart">
+                View Details <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+        <div class="project-card tilt-card reveal">
+            <div class="project-image">
+                <div class="browser-frame small">
+                    <div class="browser-bar">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="browser-body has-image">
+                        <img src="assets/projects/spendwise.png" alt="SpendWise screenshot">
+                    </div>
+                </div>
+                <div class="project-overlay">
+                    <a href="https://amal196.github.io/Spendwise-expense-tracker/" target="_blank" rel="noopener noreferrer" class="overlay-btn" aria-label="Live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://github.com/amal196/Spendwise-expense-tracker" target="_blank" rel="noopener noreferrer" class="overlay-btn" aria-label="GitHub repo"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <h3>SpendWise</h3>
+            <p>
+                Personal finance tracker with budgeting,
+                transactions and a visual expense breakdown —
+                all on one no-scroll screen.
+            </p>
+            <div class="mini-tech">
+                <span>JavaScript</span><span>HTML5</span><span>CSS3</span>
+            </div>
+            <button class="btn-view-details-link" data-project="spendwise">
+                View Details <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+        <div class="project-card tilt-card reveal">
+            <div class="project-image">
+                <div class="browser-frame small">
+                    <div class="browser-bar">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="browser-body has-image">
+                        <img src="assets/projects/portfolio.png" alt="Portfolio Website screenshot">
+                    </div>
+                </div>
+                <div class="project-overlay">
+                    <a href="javascript:void(0)" class="overlay-btn" aria-label="Live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="javascript:void(0)" class="overlay-btn" aria-label="GitHub repo"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <h3>Portfolio Website</h3>
+            <p>
+                This very site — a fully custom, responsive
+                portfolio with theming, scroll animations and
+                3D hover effects.
+            </p>
+            <div class="mini-tech">
+                <span>JavaScript</span><span>HTML5</span><span>CSS3</span>
+            </div>
+            <button class="btn-view-details-link" data-project="portfolio">
+                View Details <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+</section>
+<!-- CONTACT -->
+<div class="alt-bg">
+<section id="contact" class="section">
+    <p class="eyebrow reveal">LET'S CONNECT</p>
+    <h2 class="section-title reveal">
+        Contact
+    </h2>
+    <div class="card contact-card reveal">
+        <p>📍 Kerala, India</p>
+        <p>📧 amalcs485@gmail.com</p>
+        <p>📱 +91 9656031788</p>
+        <p>
+            <a href="https://github.com/amal196" target="_blank" rel="noopener noreferrer">
+                GitHub
+            </a>
+        </p>
+        <p>
+            <a href="https://www.linkedin.com/in/amal-c-s-5181771b3/" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+            </a>
+        </p>
+    </div>
+</section>
+</div>
+<!-- CLOSING CTA -->
+<section class="section">
+    <div class="cta-banner reveal">
+        <div>
+            <h3>Let's build something amazing together</h3>
+            <p>I'm currently open for freelance work or full-time opportunities.</p>
+        </div>
+        <a href="#contact" class="btn-primary">
+            Get In Touch <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+</section>
+<footer>
+    <p>
+        © 2026 Amal C S
+    </p>
+</footer>
+<div class="toast" id="toast"></div>
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+<!-- PROJECT DETAILS MODAL -->
+<div class="modal-overlay" id="projectModal">
+    <div class="modal-box">
+        <button class="modal-close" id="modalClose" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="modal-icon" id="modalIcon">
+            <i class="fa-solid fa-code"></i>
+        </div>
+        <h3 id="modalTitle">Project Title</h3>
+        <p id="modalDesc">Project description.</p>
+        <h4 class="modal-subheading">Key Features</h4>
+        <ul class="modal-features" id="modalFeatures"></ul>
+        <div class="tech-stack" id="modalTech"></div>
+        <div class="project-buttons">
+            <a id="modalLive" href="javascript:void(0)" target="_blank">Live Demo</a>
+            <a id="modalGithub" href="javascript:void(0)" target="_blank">GitHub</a>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
