@@ -10,7 +10,7 @@ https://personal-portfolio-red-iota-40.vercel.app/
 
 ## 📸 Preview
 
-![Portfolio Preview](assets/portfolio-preview.png)
+![Portfolio Preview](https://github.com/amal196/Personal-Portfolio/blob/main/assets/projects/portfolio.png?raw=true)
 
 ## 📌 Project Type
 
